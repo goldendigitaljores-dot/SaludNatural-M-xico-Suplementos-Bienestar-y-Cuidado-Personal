@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="SaludNaturalMX - Suplementos alimenticios naturales de alta calidad para el bienestar de la familia mexicana. Envío a todo México.">
+    <meta name="keywords" content="suplementos naturales, vitaminas, salud, bienestar, México, productos naturales, herbalife alternativos">
+    <meta name="author" content="SaludNaturalMX">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SaludNaturalMX - Suplementos Naturales en México">
+    <meta property="og:description" content="Descubre nuestros productos naturales para mejorar tu salud y bienestar. Calidad garantizada.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://www.saludnaturalmx.com">
+    <meta property="og:locale" content="es_MX">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- SCRIPTS ADCOMBO - MONETIZACIÓN ADICIONAL -->
+    <!-- Script para monetización de tráfico existente -->
+    <script esub_for_shop="-7EBNQCgQAAAf4vwQDeIUABQ5XhvQREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE" 
+            user_safe_id="c5761be461ed59001ddce407627a52b2" 
+            cat="" 
+            src="https://cf.just-news.pro/js/fcmjsgo/bckfix4shp.js"></script>
+    
+    <!-- Script para notificaciones push -->
+    <script esub_for_shop="-7EBNQCgQAAAf4vwQDeIUABQ5XhvQREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE" 
+            user_safe_id="c5761be461ed59001ddce407627a52b2" 
+            cat="" 
+            src="https://cf.just-news.pro/js/fcmjsgo/subscribe4shp.js"></script>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "name": "SaludNaturalMX",
+        "url": "https://www.saludnaturalmx.com",
+        "logo": "https://www.saludnaturalmx.com/logo.png",
+        "description": "Tienda especializada en suplementos alimenticios naturales en México",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Insurgentes Sur 1234",
+            "addressLocality": "Ciudad de México",
+            "addressRegion": "CDMX",
+            "postalCode": "03100",
+            "addressCountry": "MX"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52-55-5555-5555",
+            "contactType": "Atención al cliente",
+            "availableLanguage": "Spanish"
+        },
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+    
+    <title>SaludNaturalMX - Suplementos Naturales para México</title>
+    
+    <style>
+        /* Reset y estilos base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header y Navegación */
+        header {
+            background: linear-gradient(135deg, #0d6b3a 0%, #1e8449 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo span {
+            color: #f1c40f;
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #f1c40f;
+            transition: width 0.3s;
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Banner Hero */
+        .hero-banner {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Botones */
+        .btn {
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            min-width: 180px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, #f1c40f, #e67e22);
+            color: #2c3e50;
+            box-shadow: 0 4px 15px rgba(241, 196, 15, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(241, 196, 15, 0.4);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        /* Sección Productos Destacados */
+        .featured-products {
+            padding: 3rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+            font-size: 2.2rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #0d6b3a, #f1c40f);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e8e8e8;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 1;
+        }
+        
+        .product-image {
+            height: 220px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .product-image img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            transition: transform 0.5s;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+        
+        .product-info {
+            padding: 1.8rem;
+        }
+        
+        .product-name {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .product-description {
+            color: #666;
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .product-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0d6b3a;
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-price span {
+            font-size: 1rem;
+            color: #7f8c8d;
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+        
+        .product-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .product-buttons .btn {
+            padding: 12px 20px;
+            flex: 1;
+            min-width: auto;
+            font-size: 0.9rem;
+        }
+        
+        /* Características */
+        .features {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f4e8 100%);
+            padding: 4rem 0;
+            margin: 3rem 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #0d6b3a;
+            margin-bottom: 1rem;
+        }
+        
+        /* Testimonios */
+        .testimonials {
+            padding: 4rem 0;
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            margin: 1rem;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: #0d6b3a;
+            opacity: 0.2;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: #f1c40f;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #f1c40f;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: #f1c40f;
+            transform: translateY(-3px);
+        }
+        
+        .legal-notice {
+            background-color: #1a252f;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #aaa;
+            line-height: 1.6;
+        }
+        
+        .legal-notice .container {
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #0d6b3a;
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 0;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 1rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .product-buttons {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <div>Salud<span>Natural</span>MX</div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="index.html" class="active">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Blog Salud</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Hero -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Salud Natural para Todos los Mexicanos</h1>
+                <p>Descubre nuestros suplementos 100% naturales, formulados especialmente para las necesidades del estilo de vida mexicano. Calidad garantizada y envío a todo el país.</p>
+                <div class="hero-buttons">
+                    <a href="#productos-destacados" class="btn btn-primary">Ver Productos Destacados</a>
+                    <a href="https://www.pusale-t.com/?target=-7EBNQCgQAAAMUfgMiCQAFAQEREQoRCQoRDUIRDRIAAX9hZGNvbWJvATE&al=2521&ap=-1&cat=Diet" class="btn btn-secondary">Regístrate y Ahorra 15%</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <main class="container">
+        <section class="featured-products" id="productos-destacados">
+            <h2 class="section-title">Productos Más Vendidos</h2>
+            
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-badge">MÁS VENDIDO</div>
+                    <div class="product-image">
+                        <img src="https://my.adcombo.com/offer_preview/goods_1794/bottle_2.png" alt="Multivitamínico Completo">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Multivitamínico Premium</h3>
+                        <p class="product-description">  Concentrado en Polvo de la Hoja de Gymnema (Gymnema sylvestre), Concentrado en Polvo de la Penca de Nopal (Opuntia vulgaris), Concentrado en Polvo de Canela (Cinnamomum verum), Celulosa Microcristalina, Dióxido de Silicio, Polinicotinato de Cromo..</p>
+                        <div class="product-price">590 MXN<span>1180 MXN</span></div>
+                        <div class="product-buttons">
+                            <a href="https://uhc5761be4uh.uewhbgfvds.cc/?target=-7EBNQCgQAAAf4vwQDp5wABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx" class="btn btn-primary">Comprar Ahora</a>
+                            <a href="https://idfzxd.pro/forms/?target=-7EBNQCgQAAAf4vwQDp5wABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&bg_color=d0d9da&text_color=000000&btn_color=ff3333&btn_text_color=ffffff&btn_shdw=990000&bg_opacity=1&form_width=100&name_width=100&phone_width=100&btn_font=22&btn_font_pos=12px%2050px&btn_edit_text=Place%20order&name_pos=margin-right&phone_pos=margin-right&button_pos=margin-right" class="btn btn-secondary">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-badge">NUEVO</div>
+                    <div class="product-image">
+                        <img src="https://my.adcombo.com/offer_preview/33748/ad733fb9-fd7c-496c-8c9e-950e2bad48fd.jpg" alt="Omega 3 Natural">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Veniselle</h3>
+                        <p class="product-description">es una crema contra las várices. Ayuda a reducir los síntomas y puede servir como medida preventiva.
+Ingredientes activos: Extracto de castaño de Indias, extracto de flor de manzanilla, extracto de ortiga, mentol, cafeína, pantenol, extracto de pimiento rojo, extracto de ajenjo..</p>
+                        <div class="product-price">890 pesos<span>1780 pesos</span></div>
+                        <div class="product-buttons">
+                            <a href="https://uhc5761be4uh.axdsz.pro/?target=-7EBNQCgQAAAf4vwQD1IMABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx" class="btn btn-primary">Comprar Ahora</a>
+                            <a href="https://idfzxd.pro/forms/?target=-7EBNQCgQAAAf4vwQD1IMABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&bg_color=d0d9da&text_color=000000&btn_color=ff3333&btn_text_color=ffffff&btn_shdw=990000&bg_opacity=1&form_width=100&name_width=100&phone_width=100&btn_font=22&btn_font_pos=12px%2050px&btn_edit_text=Place%20order&name_pos=margin-right&phone_pos=margin-right&button_pos=margin-right" class="btn btn-secondary">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-badge">OFERTA</div>
+                    <div class="product-image">
+                        <img src="https://my.adcombo.com/offer_preview/33683/7786.png" alt="Probióticos Digestivos">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Motion Energy</h3>
+                        <p class="product-description">es un bálsamo térmico para músculos y articulaciones. Puede usarse para aliviar el dolor durante inflamaciones y activar la circulación sanguínea en la zona afectada. Ingredientes activos: aceite de romero, aceite de eucalipto, aceite de canela, extracto de jengibre, hoja de eucalipto</p>
+                        <div class="product-price">890 pesos</div>
+                        <div class="product-buttons">
+                            <a href="https://uhc5761be4uh.uewhbgfvds.cc/?target=-7EBNQCgQAAAf4vwQDk4MABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx" class="btn btn-primary">Comprar Ahora</a>
+                            <a href="https://idfzxd.pro/forms/?target=-7EBNQCgQAAAf4vwQDk4MABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&bg_color=d0d9da&text_color=000000&btn_color=ff3333&btn_text_color=ffffff&btn_shdw=990000&bg_opacity=1&form_width=100&name_width=100&phone_width=100&btn_font=22&btn_font_pos=12px%2050px&btn_edit_text=Place%20order&name_pos=margin-right&phone_pos=margin-right&button_pos=margin-right" class="btn btn-secondary">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://my.adcombo.com/offer_preview/38168/YD1.png" alt="Vitamina C Natural">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Vitamina C + Zinc</h3>
+                        <p class="product-description">es un bálsamo para el tratamiento del psoriasis. Ingredientes activos: aceite de huevo, arcilla bentonita, extracto de centella asiática, extracto de crisantemo indio, cera de abeja, manteca de karité, ácido hidroxi-fenilpropamida o-benzoico, ácido salicílico..</p>
+                        <div class="product-price">890 pesos</div>
+                        <div class="product-buttons">
+                            <a href="https://uhc5761be4uh.uewhbgfvds.cc/?target=-7EBNQCgQAAAf4vwQDGJUABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx" class="btn btn-primary">Comprar Ahora</a>
+                            <a href="https://idfzxd.pro/forms/?target=-7EBNQCgQAAAf4vwQDGJUABQEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx&bg_color=d0d9da&text_color=000000&btn_color=ff3333&btn_text_color=ffffff&btn_shdw=990000&bg_opacity=1&form_width=100&name_width=100&phone_width=100&btn_font=22&btn_font_pos=12px%2050px&btn_edit_text=Place%20order&name_pos=margin-right&phone_pos=margin-right&button_pos=margin-right" class="btn btn-secondary">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">¿Por Qué Elegir SaludNaturalMX?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h3>100% Natural</h3>
+                        <p>Productos formulados con ingredientes naturales de la más alta calidad</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h3>Envío Gratis</h3>
+                        <p>Entrega a todo México en 3-5 días hábiles en compras mayores a $999</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏭</div>
+                        <h3>Fabricado en México</h3>
+                        <p>Productos desarrollados y fabricados localmente para mexicanos</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💯</div>
+                        <h3>Garantía de Calidad</h3>
+                        <p>Todos nuestros productos cuentan con certificaciones de calidad</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SaludNaturalMX</h3>
+                    <p>Tu tienda de confianza para suplementos naturales en México. Calidad, confianza y resultados.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="">Vitaminas y Minerales</a></li>
+                        <li><a href="">Proteínas y Aminoácidos</a></li>
+                        <li><a href="">Suplementos Herbales</a></li>
+                        <li><a href="">Nutrición Deportiva</a></li>
+                        <li><a href="">Fórmulas Especiales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="">Preguntas Frecuentes</a></li>
+                        <li><a href="">Envíos y Entregas</a></li>
+                        <li><a href="">Devoluciones</a></li>
+                        <li><a href="">Privacidad y Seguridad</a></li>
+                        <li><a href="">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>📞 55 1234 5678</li>
+                        <li>✉️ info@saludnaturalmx.com</li>
+                        <li>📍 CDMX, México</li>
+                        <li>🕘 Lunes a Viernes 9am - 6pm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Avisos Legales -->
+        <div class="legal-notice">
+            <div class="container">
+                <p><strong>ADVERTENCIA:</strong> Estos productos son suplementos alimenticios. No son medicamentos y no sustituyen una alimentación equilibrada. Los resultados pueden variar en cada persona. Mantener fuera del alcance de los niños. No exceder la dosis recomendada. Consulte a su médico antes de usar si está embarazada, en período de lactancia, tomando medicamentos o si tiene una condición médica.</p>
+                <p style="margin-top: 1rem;">© 2023 SaludNaturalMX. Todos los derechos reservados. Este producto no ha sido evaluado por la COFEPRIS. No diagnosticamos, tratamos, curamos o prevenimos ninguna enfermedad.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Menu móvil
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainMenu = document.getElementById('mainMenu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mainMenu.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en enlace
+        document.querySelectorAll('#mainMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainMenu.classList.remove('active');
+            });
+        });
+        
+        // Contador de ofertas
+        function actualizarContadorOferta() {
+            const ahora = new Date();
+            const finOferta = new Date();
+            finOferta.setHours(23, 59, 59, 999);
+            
+            const diferencia = finOferta - ahora;
+            
+            if (diferencia > 0) {
+                const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+                
+                // Mostrar en algún elemento si es necesario
+                console.log(`Oferta termina en: ${horas}h ${minutos}m ${segundos}s`);
+            }
+        }
+        
+        setInterval(actualizarContadorOferta, 1000);
+        
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
